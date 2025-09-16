@@ -1,0 +1,206 @@
+body {
+      margin: 0;
+      padding: 40px;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f4f3;
+      color: #222;
+      line-height: 1.6;
+      text-decoration: none;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 60px;
+      gap: 20px;
+  
+    }
+    .hero h1 {
+      font-size: 36px;
+      font-weight: 600;
+      margin: 0;
+      flex: 1;
+    }
+    .hero p {
+      flex: 1;
+      max-width: 400px;
+      font-size: 16px;
+      color: #555;
+      margin-top: 10px;
+      justify-content: center;
+      text-align: center;
+    }
+
+    /* Section Heading */
+    h2 {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    /* Values Grid */
+    .values {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px 60px;
+    }
+
+    .value {
+      display: flex;
+      gap: 15px;
+    }
+
+    .value .num {
+      font-size: 14px;
+      color: #777;
+      min-width: 30px;
+    }
+
+    .value h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 0 0 8px 0;
+    }
+
+    .value p {
+      font-size: 14px;
+      color: #555;
+      margin: 0;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        gap: 15px;
+      }
+      .values {
+        grid-template-columns: 1fr;
+        gap: 30px 0;
+      }
+    }
+    .team-section {
+    text-align: center;
+    padding: 50px 50px;
+    
+}
+
+.team-heading {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.team-subheading {
+    font-size: 24px;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    
+}
+.team-member h3{
+    color: #555;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.team-member {
+    width: 400px;
+    background-color: #eaeaea;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: inherit ease;
+    transition-duration: 3s;
+}
+ .team-member{
+            animation-name: moveRight;
+            animation-duration: 2s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: initial;
+        }
+
+        @keyframes moveRight {
+            from {
+                transform: translatey(0);
+            }
+            to {
+                transform: translatey(400px);
+            }
+        } 
+.team-member img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.name {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+.recruitment-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: #ffffff;
+}
+
+.image-area img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.text-area {
+  max-width: 400px;
+  margin-left: 40px;
+}
+
+.text-area h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.text-area p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.join-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: orange;
+  color: black;
+  border-radius: 2px solid  black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.join-button{
+  color: rgba(190, 127, 11, 0.523);
+
+}
+
+.join-button:hover {
+  background-color: white;
+}
